@@ -27,6 +27,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         provider.setUserDetailsService(userDetailsService);
         provider.setPasswordEncoder(new BCryptPasswordEncoder());
 
+        String password="kush@12";
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String encodedPassword = passwordEncoder.encode(password);
+
+        System.out.println("Encoded Password is : " + encodedPassword);
+
+
         return provider;
     }
 

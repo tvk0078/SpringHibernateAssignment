@@ -66,9 +66,6 @@ public class Student {
         this.studentDept = studentDept;
         this.college = college;
     }
-
-
-
     public void addClub(Club club) {
         clubs.add(club);
     }
